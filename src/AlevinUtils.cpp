@@ -1210,7 +1210,7 @@ bool processAlevinOpts(AlevinOpts<ProtocolT>& aopt, SalmonOpts& sopt,
     }
 
     // validate that BC and UMI lengths are OK
-    uint32_t maxBC{31};
+    uint32_t maxBC{35};
     uint32_t maxUMI{31};
     // the barcode length must be in [1,31]
     if ((bc_geo.length() < 1) or (bc_geo.length() > maxBC)) {
